@@ -1,0 +1,20 @@
+type: CoreBlock
+name: "Core: HQ"
+health: 10000
+itemCapacity: 5000
+size: 5
+unitCapModifier: 128
+unitType: core-unit
+requirements: [
+	supplies/1500
+] 
+category: effect
+fogRadius: 10
+hasItems: true
+solid: true
+alwaysUnlocked: true
+allowResupply: true
+buildCostMultiplier: 10
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

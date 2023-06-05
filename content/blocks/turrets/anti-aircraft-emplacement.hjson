@@ -1,0 +1,55 @@
+type: itemTurret
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+size: 2
+rotateSpeed: 1
+inaccuracy: 10
+category: turret
+reload: 10
+recoil: 0
+maxAmmo: 100
+name: AA Emplacement
+outlineRadius: 0
+buildCostMultiplier: 3
+fogRadius: 20
+shake: 1
+ammoEjectBack: 1
+ammoUseEffect: casing2
+targetAir: true
+targetGround: false
+health: 250
+range: 160
+shootY: 17
+drawer: {
+	type: DrawTurret
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			}
+		]
+	}
+shootSound: 20mmAA-fire
+	requirements: [
+	supplies/700
+	]
+	ammoTypes: {
+	supplies: {
+	type: FlakBulletType
+	explodeRange: 8
+	width: 2
+	height: 4
+	ammoMultiplier: 1
+	damage: 15
+	speed: 3
+	lifetime: 40
+	shootEffect: shootSmall
+	smokeEffect: shootSmallSmoke
+	}
+	}

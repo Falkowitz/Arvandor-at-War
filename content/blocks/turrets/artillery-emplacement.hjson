@@ -1,0 +1,66 @@
+type: itemTurret
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+size: 2
+rotateSpeed: 0.25
+category: turret
+reload: 600
+recoil: 1
+maxAmmo: 50
+name: Artillery Emplacement
+outlineRadius: 0
+buildCostMultiplier: 4
+fogRadius: 50
+shake: 10
+ammoPerShot: 10
+ammoEjectBack: 1
+ammoUseEffect: casing2
+range: 400
+targetAir: false
+targetGround: true
+health: 250
+inaccuracy: 10
+shootSound: 75mm-Artyfire
+drawer: {
+	type: DrawTurret
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			}
+		]
+	}
+	ammoTypes: {
+	supplies: {
+        type: ArtilleryBulletType 
+	status: low-morale
+	statusDuration: 600
+        pierce: false
+        pierceBuilding: false
+	width: 3
+	height: 5
+	damage: 150
+	speed: 1
+	lifetime: 400
+        splashDamageRadius: 16
+        splashDamage: 150
+	shootEffect: shootSmall
+	smokeEffect: shootSmallSmoke
+        trailEffect: smokeCloud
+        trailLength: 24
+        hitEffect: explosion
+        despawnEffect: explosion
+        weaveMag: 0.5
+        weaveRandom: true
+        weaveScale: 1
+	}
+	}
+requirements: [
+    supplies/700
+    ] 

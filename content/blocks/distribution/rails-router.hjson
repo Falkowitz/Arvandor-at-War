@@ -1,0 +1,10 @@
+type: Router
+name: "Railroad Router"
+health: 10
+requirements: [
+  supplies/5
+]
+category: distribution
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

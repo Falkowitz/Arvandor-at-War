@@ -1,0 +1,6 @@
+name: Low Morale
+speedMultiplier: 0.75
+healthMultiplier: 0.75
+color: ff0000
+effect: sapped
+outline: false

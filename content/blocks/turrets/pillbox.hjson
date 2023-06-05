@@ -1,0 +1,54 @@
+type: itemTurret
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+size: 2
+rotateSpeed: 1
+inaccuracy: 15
+category: turret
+reload: 5
+recoil: 0
+maxAmmo: 100
+name: Pillbox
+outlineRadius: 0
+buildCostMultiplier: 3
+fogRadius: 20
+shake: 1
+range: 160
+ammoEjectBack: 1
+targetAir: true
+targetGround: true
+ammoUseEffect: casing1
+health: 600
+drawer: {
+	type: DrawTurret
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			}
+		]
+	}
+shootSound: 7.9MG-fire
+	requirements: [
+	supplies/1400
+	]
+	ammoTypes: {
+	supplies: {
+	status: low-morale
+	statusDuration: 180
+	width: 2
+	height: 4
+	ammoMultiplier: 2
+	damage: 10
+	speed: 6
+	lifetime: 26.75
+	shootEffect: shootSmall
+	smokeEffect: shootSmallSmoke
+	}
+	}

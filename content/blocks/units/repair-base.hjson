@@ -1,0 +1,27 @@
+type: RepairTower
+category: units
+researchCostMultiplier: 0.2
+size: 3
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+buildCostMultiplier: 0.2
+rotate: true
+health: 300
+name: Repair Base
+fogRadius: 5
+hasItems: true
+solid: true
+itemCapacity: 150
+healAmount: 0.2
+range: 40
+requirements: [
+	supplies/375
+]
+consumes: {
+	items:  {
+		items:  [
+		supplies/10
+			]
+		}
+	  }

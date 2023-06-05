@@ -1,0 +1,71 @@
+type: UnitFactory
+category: units
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+researchCostMultiplier: 0.2
+size: 4
+configurable: true
+buildCostMultiplier: 1
+rotate: true
+quickRotate: true
+health: 300
+name: Salfedor Barracks
+fogRadius: 3
+hasItems: true
+solid: true
+itemCapacity: 1000
+requirements: [
+	supplies/300
+]
+plans: [
+  {
+    unit: salfedor-infantry
+    time: 600
+    requirements: [
+		supplies/100
+    ]
+  },
+  {
+    unit: salfedor-demolitions-specialist
+    time: 3600
+    requirements: [
+		supplies/250
+    ]
+  },
+  {
+    unit: salfedor-light-tank
+    time: 3600
+    requirements: [
+		supplies/500
+    ]
+  },
+  {
+    unit: salfedor-light-support-weapon
+    time: 1500
+    requirements: [
+		supplies/350
+    ]
+  },
+  {
+    unit: salfedor-anti-tank-gun
+    time: 2700
+    requirements: [
+		supplies/350
+    ]
+  },
+  {
+    unit: salfedor-officer
+    time: 5100
+    requirements: [
+		supplies/600
+    ]
+  },
+  {
+    unit: salfedor-field-artillery
+    time: 5400
+    requirements: [
+		supplies/250
+    ]
+  }
+]

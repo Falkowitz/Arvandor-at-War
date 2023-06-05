@@ -1,0 +1,15 @@
+name: Lookout Tower
+type: Wall
+size: 2
+health: 300
+requirements:[
+	supplies/150
+]
+category: defense
+fogRadius: 30
+buildVisibility: shown
+buildCostMultiplier: 1
+rotate: true
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

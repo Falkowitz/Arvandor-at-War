@@ -1,0 +1,23 @@
+name: Destroyed
+color: 4a4b53
+outline: false
+effectChance: 0.01
+effect: {
+	type: ParticleEffect
+	sizeFrom: 1
+	sizeTo: 5
+	lifetime: 600
+	colorFrom: 4a4b53
+	colorTo: 4a4b53
+	lightOpacity: 0.5
+	lightScl: 1
+	particles: 1
+	layer: 29.2
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+	spin: 0.5
+	}
+permanent: true
+show: false

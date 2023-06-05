@@ -1,0 +1,7 @@
+type: Floor
+speedMultiplier: 1
+name: Demilitarized Zone
+walkSound: grass
+variants: 1
+placeablePlayer: false
+placeableOn: false

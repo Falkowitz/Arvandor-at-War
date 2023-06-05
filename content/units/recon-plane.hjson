@@ -1,0 +1,29 @@
+name: Recon Plane
+flying: true
+health: 150
+hitSize: 24
+outlines: false
+speed: 1
+drag: 0
+engineSize: 0
+targetGround: false
+targetAir: false
+drawCell: false
+rotateSpeed: 0.5
+baseRotateSpeed: 0.5
+faceTarget: false
+accel: 0.05
+armor: 0
+itemCapacity: 0
+omniMovement: false
+ammoCapacity: 0
+fogRadius: 30
+canAttack: false
+loopSound: plane-ambient
+deathSound: light-tank-explosion
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: recon-plane-wreck
+	}
+]

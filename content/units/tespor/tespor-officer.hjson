@@ -1,0 +1,27 @@
+health: 125
+name: Tespor Officer Corps
+armor: 0
+speed: 0.3
+hitSize: 6
+rotateSpeed: 1
+mechSideSway: 0
+outlines: false
+fogRadius: 5
+deathExplosionEffect: false
+deathSound: division-death
+ammoCapacity: 150
+ammoType: supplies
+targetAir: false
+targetGround: false
+abilities: [
+  {
+    type: StatusFieldAbility
+    range: 24
+    duration: 300
+    reload: 480
+    effect: high-morale
+  }
+]
+immunities: [
+    high-morale
+]

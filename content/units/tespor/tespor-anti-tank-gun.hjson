@@ -1,0 +1,75 @@
+health: 225
+type: tank
+name: Tespor Anti Tank Gun
+armor: 2
+treadRects: [
+	{
+	x: 0
+	y: 0
+	width: 0
+	length: 0
+	}
+	]
+speed: 0.35
+hitSize: 16
+rotateSpeed: 0.5
+outlines: false
+fogRadius: 30
+drawCell: false
+omniMovement: false
+range: 240
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: tespor-division-ambient
+ammoCapacity: 30
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: tespor-anti-tank-gun-weapon
+	x: 0
+	y: 0
+	shootY: 2
+	recoil: 0
+	inaccuracy: 5
+	ejectEffect: none
+	reload: 240
+	mirror: false
+	rotate: false
+	shootSound: bk75mm-fire
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		damage: 175
+		splashDamage: 125
+		splashDamageRadius: 10
+		speed: 6
+		recoil: 1
+		lifetime: 40
+		width: 2
+		height: 4
+		status: low-morale
+		statusDuration: 180
+		pierceArmor: true
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-anti-tank-gun-wreck
+	}
+]

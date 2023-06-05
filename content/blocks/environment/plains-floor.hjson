@@ -1,0 +1,5 @@
+type: Floor
+speedMultiplier: 1
+name: Plains
+walkSound: grass
+variants: 6

@@ -1,0 +1,13 @@
+name: Sandbags
+type: Wall
+health: 75
+requirements:[
+	supplies/10
+]
+category: defense
+fogRadius: 1
+buildVisibility: shown
+buildCostMultiplier: 10
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

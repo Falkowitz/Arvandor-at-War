@@ -1,0 +1,17 @@
+name: Warehouse
+type: StorageBlock
+size: 2
+health: 50
+itemCapacity: 100
+drawTeamOverlay: true
+category: effect
+buildVisibility: shown
+rebuildable: true
+buildCostMultiplier: 2
+allowResupply: true
+requirements: [
+supplies/25
+]
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

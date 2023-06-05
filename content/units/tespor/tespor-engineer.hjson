@@ -1,0 +1,82 @@
+health: 75
+name: Tespor Engineer
+armor: 0
+type: mech
+speed: 0.325
+hitSize: 6
+mechSideSway: 0.1
+outlines: false
+fogRadius: 5
+drawCell: false
+range: 16
+defaultCommand: repair
+controller: RepairAI
+deathExplosionEffect: {
+	type: ParticleEffect
+	sizeFrom: 1
+	sizeTo: 10
+	lifetime: 3600
+	colorFrom: 800000
+	colorTo: 800000
+	lightOpacity: 0
+	lightScl: 0
+	particles: 1
+	layer: 28
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+}
+deathSound: tespor-division-death
+loopSound: tespor-division-ambient
+ammoCapacity: 50
+ammoType: supplies
+targetAir: false
+targetGround: false
+weapons: [
+		{
+		name: tespor-engineer-weapon
+		x: 0
+		y: 0
+		shootX: 2
+		shootY: 2
+		recoil: -0.1
+		ejectEffect: none
+		reload: 90
+		mirror: false
+		rotate: false
+		shootSound: repair
+		bullet:{
+			type:BasicBulletType
+			damage: 40
+			recoil: -1
+			speed: 4
+			range: 8
+			lifetime: 2
+			width: 1
+			height: 1
+			healPercent: 3
+			collidesTeam: true
+			hitEffect: none
+			despawnEffect: none
+			shootEffect: none
+			smokeEffect: none
+			}
+		}
+	]
+abilities: [
+  {
+    type: StatusFieldAbility
+    range: 24
+    duration: 300
+    reload: 480
+    effect: entrenched
+  },
+  {
+    type: SpawnDeathAbility
+    unit: tespor-engineer-corpse
+  }
+]
+immunities: [
+    entrenched
+]

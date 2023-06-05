@@ -1,0 +1,71 @@
+type: UnitFactory
+category: units
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+researchCostMultiplier: 0.2
+size: 4
+configurable: true
+buildCostMultiplier: 1
+rotate: true
+quickRotate: true
+health: 300
+name: Tespor Barracks
+fogRadius: 3
+hasItems: true
+solid: true
+itemCapacity: 1000
+requirements: [
+	supplies/300
+]
+plans: [
+  {
+    unit: tespor-infantry
+    time: 600
+    requirements: [
+		supplies/100
+    ]
+  },
+  {
+    unit: tespor-light-tank
+    time: 3600
+    requirements: [
+		supplies/450
+    ]
+  },
+  {
+    unit: tespor-light-support-weapon
+    time: 1500
+    requirements: [
+		supplies/350
+    ]
+  },
+  {
+    unit: tespor-anti-tank-gun
+    time: 3600
+    requirements: [
+		supplies/750
+    ]
+  },
+  {
+    unit: tespor-officer
+    time: 5100
+    requirements: [
+		supplies/600
+    ]
+  },
+  {
+    unit: tespor-engineer
+    time: 7200
+    requirements: [
+		supplies/500
+    ]
+  },
+  {
+    unit: tespor-field-artillery
+    time: 5400
+    requirements: [
+		supplies/250
+    ]
+  }
+]

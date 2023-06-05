@@ -1,0 +1,5 @@
+name: On a road
+healthMultiplier: 0.50
+speedMultiplier: 1.50
+color: c5beac
+outline: false

@@ -1,0 +1,42 @@
+name: AT Mine
+type: ShockMine
+size: 1
+tendrils: 0
+damage: 125
+tileDamage: 50
+health: 50
+hasShadow: false
+customShadow: true
+cooldown: 60
+underBullets: true
+length: 0
+shots: 1
+requirements:[
+	supplies/500
+]
+category: defense
+fogRadius: 0
+buildVisibility: shown
+buildCostMultiplier: 3
+placeSound: block-place
+breakSound: block-destroy
+destroySound: light-tank-explosion
+teamAlpha: 0
+bullet:{
+	width: 1
+	height: 1
+	speed: 0
+	lifetime: 1
+	damage: 125
+	splashDamage: 125
+	splashDamageRadius: 8
+	splashDamagePierce: true
+	collides: true
+	collidesAir: false
+	collidesTiles: false
+	absorbable: false
+	hittable: false
+	hitEffect: none
+	status: low-morale
+	statusDuration: 180
+	}

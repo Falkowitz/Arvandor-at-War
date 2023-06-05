@@ -1,0 +1,100 @@
+health: 75
+type: mech
+name: Salfedor Demolitions Specialist
+armor: 0
+speed: 0.4
+mechSideSway: 0.1
+hitSize: 6
+outlines: false
+fogRadius: 5
+drawCell: false
+range: 16
+controller: HugAI
+deathExplosionEffect: {
+	type: ParticleEffect
+	sizeFrom: 1
+	sizeTo: 10
+	lifetime: 3600
+	colorFrom: 800000
+	colorTo: 800000
+	lightOpacity: 0
+	lightScl: 0
+	particles: 1
+	layer: 28
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+}
+deathSound: salfedor-division-death
+loopSound: salfedor-division-ambient
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: salfedor-demolitions-specialist-weapon
+	useAmmo: false
+	x: 0
+	y: 0
+	shootX: 0
+	shootY: 6
+	recoil: 0
+	ejectEffect: none
+	reload: 300
+	mirror: false
+	rotate: false
+	shootSound: swoosh-sound
+	parts: [
+			{
+			suffix: "-lhand"
+			type: RegionPart
+			progress: recoil
+			x: -2
+			y: 0
+			moveRot: 45
+			moveY: -1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			},
+			{
+			suffix: "-rhand"
+			type: RegionPart
+			progress: recoil
+			x: 2
+			y: 0
+			moveRot: 45
+			moveX: -1
+			moveY: 1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		buildingDamageMultiplier: 1.5
+		damage: 50
+		hitSize: 8
+		recoil: -1
+		width: 1
+		height: 1
+		maxRange: 16
+		shootEffect: none
+		despawnEffect: none
+		chargeEffect: none
+		smokeEffect: none
+		hittable: false
+		reflectable: true
+		speed: 1
+		lifetime: 1
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: salfedor-demolitions-specialist-corpse
+	}
+]

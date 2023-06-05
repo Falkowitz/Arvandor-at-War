@@ -1,0 +1,38 @@
+health: 350
+name: Tespor Light Tank Division
+armor: 8
+speed: 0.28
+hitSize: 6
+rotateSpeed: 1
+mechSideSway: 0
+outlines: false
+fogRadius: 7
+deathExplosionEffect: false
+deathSound: division-death
+loopSound: light-tank-ambient
+ammoCapacity: 50
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: none
+	x: 0
+	y: 0
+	recoil: 0
+	inaccuracy: 5
+	ejectEffect: none
+	reload: 270
+	mirror: false
+	rotate: true
+	shootSound: 37mmA7-fire
+	bullet:{
+		type: BasicBulletType
+		damage: 65
+		speed: 3
+		lifetime: 20
+		width: 2
+		height: 4
+		}
+	}
+]

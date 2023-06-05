@@ -1,0 +1,140 @@
+health: 115
+type: mech
+name: Tespor Infantry
+armor: 0
+speed: 0.375
+mechSideSway: 0.1
+hitSize: 6
+outlines: false
+fogRadius: 15
+drawCell: false
+range: 120
+deathExplosionEffect: {
+	type: ParticleEffect
+	sizeFrom: 1
+	sizeTo: 10
+	lifetime: 3600
+	colorFrom: 800000
+	colorTo: 800000
+	lightOpacity: 0
+	lightScl: 0
+	particles: 1
+	layer: 28
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+}
+deathSound: tespor-division-death
+loopSound: tespor-division-ambient
+ammoCapacity: 30
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: tespor-infantry-weapon
+	x: 0
+	shootX: 2
+	y: 0
+	shootY: 6
+	recoil: 0.5
+	inaccuracy: 5
+	ejectEffect: none
+	reload: 180
+	mirror: false
+	rotate: false
+	shootSound: 7.92×57mm-fire
+	parts: [
+			{
+			suffix: "-lhand"
+			type: RegionPart
+			progress: warmup
+			x: -2
+			y: 0
+			moveRot: -15
+			moveY: 1
+			moveX: 0.5
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			},
+			{
+			suffix: "-rhand"
+			type: RegionPart
+			progress: warmup
+			x: 2
+			y: 0
+			moveRot: -45
+			moveX: -1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		optimalLifeFract: 120
+		damage: 15
+		speed: 6
+		lifetime: 20
+		width: 2
+		height: 4
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 60
+		}
+	},
+	{
+	name: none
+	x: 0
+	y: 0
+	shootX: 2
+	useAmmo: false
+	shootY: 6
+	recoil: -1
+	ejectEffect: none
+	reload: 420
+	mirror: false
+	rotate: false
+	shootSound: swoosh-sound
+	bullet:{
+		type: BasicBulletType
+		damage: 30
+		recoil: -1
+		width: 1
+		height: 1
+		range: 8
+		hitEffect: none
+		despawnEffect: none
+		shootEffect: none
+		chargeEffect: none
+		smokeEffect: none
+		hittable: false
+		reflectable: true
+		speed: 4
+		lifetime: 2
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-infantry-corpse
+	}
+]

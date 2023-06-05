@@ -1,0 +1,72 @@
+health: 300
+name: Salfedor Light Armored Vehicle
+type: tank
+armor: 15
+speed: 0.6
+hitSize: 24
+rotateSpeed: 1
+treadRects: [
+	{
+	x: 16
+	y: 0
+	width: 6
+	length: 96
+	}
+]
+mechSideSway: 0
+outlines: false
+fogRadius: 10
+drawCell: false
+omniMovement: false
+rotateMoveFirst: true
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: light-tank-ambient
+ammoCapacity: 500
+ammoType: supplies
+targetAir: false
+targetGround: true
+range: 80
+weapons:[
+	{
+	name: salfedor-light-tank-weapon
+	x: 0
+	y: -3
+	shootX: 0
+	shootY: 14
+	recoil: 0
+	rotateSpeed: 1
+	inaccuracy: 10
+	ejectEffect: none
+	reload: 5
+	mirror: false
+	rotate: true
+	shootSound: 12mm-fire
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -2
+			mirror: false
+			outline: false
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		damage: 15
+		speed: 6
+		lifetime: 14
+		width: 2
+		height: 4
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: salfedor-light-tank-wreck
+	}
+]

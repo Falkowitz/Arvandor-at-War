@@ -1,0 +1,12 @@
+type: Junction
+name: "Railroad Junction"
+health: 10
+speed: 0.1
+capacity: 3
+requirements: [
+  supplies/10
+]
+category: distribution
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy

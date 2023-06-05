@@ -1,0 +1,21 @@
+type: CoreBlock
+name: "Capture Point"
+health: 1000
+itemCapacity: 1000
+size: 1
+unitCapModifier: 0
+unitType: core-unit
+requirements: [
+	supplies/500
+] 
+category: effect
+fogRadius: 10
+hasItems: true
+solid: true
+alwaysUnlocked: true
+allowResupply: true
+buildCostMultiplier: 3
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+buildVisibility: editorOnly

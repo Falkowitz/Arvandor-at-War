@@ -1,0 +1,5 @@
+name: On a border
+healthMultiplier: 0.75
+speedMultiplier: 0.25
+color: ff0000
+outline: false

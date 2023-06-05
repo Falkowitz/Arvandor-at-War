@@ -1,0 +1,7 @@
+name: "aaw"
+displayName: "Arvandor at War"
+description: "Total conversion PVP mod"
+author: "Fitz/Semastaraka"
+minGameVersion: "136"
+version: "0.1"
+hideBrowser: true

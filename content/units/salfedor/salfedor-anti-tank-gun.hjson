@@ -1,0 +1,40 @@
+health: 200
+name: Salfedor Tank Destroyer Battalion
+armor: 5
+speed: 0.15
+hitSize: 6
+rotateSpeed: 1
+mechSideSway: 0
+outlines: false
+fogRadius: 8
+deathExplosionEffect: false
+deathSound: division-death
+ammoCapacity: 30
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: none
+	x: 0
+	y: 0
+	recoil: 0
+	inaccuracy: 3
+	ejectEffect: none
+	reload: 300
+	mirror: false
+	rotate: true
+	shootSound: 75mm-fire
+	bullet:{
+		type: BasicBulletType
+		damage: 175
+		speed: 3
+		lifetime: 25
+		width: 2
+		height: 4
+		status: low-morale
+		statusDuration: 180
+		pierceArmor: true
+		}
+	}
+]

@@ -1,0 +1,54 @@
+type: itemTurret
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+size: 2
+rotateSpeed: 0.75
+inaccuracy: 5
+category: turret
+reload: 240
+recoil: 1
+maxAmmo: 30
+name: AT Emplacement
+outlineRadius: 0
+buildCostMultiplier: 3
+fogRadius: 30
+shake: 5
+ammoEjectBack: 1
+ammoUseEffect: casing2
+targetAir: false
+targetGround: true
+health: 225
+range: 240
+shootSound: 37mmA7-fire
+drawer: {
+	type: DrawTurret
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			}
+		]
+	}
+	requirements: [
+	supplies/700
+	]
+	ammoTypes: {
+	supplies: {
+	status: low-morale
+	statusDuration: 180
+	width: 2
+	height: 4
+	ammoMultiplier: 1
+	damage: 175
+	speed: 6
+	lifetime: 40
+	shootEffect: shootSmall
+	smokeEffect: shootSmallSmoke
+	}
+	}
