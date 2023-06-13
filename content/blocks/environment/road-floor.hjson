@@ -10,3 +10,4 @@ category: distribution
 requirements: [
 	supplies/10
 ]
+buildCostMultiplier: 20
