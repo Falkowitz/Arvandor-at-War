@@ -5,3 +5,4 @@ walkSound: grass
 status: roaded
 statusDuration: 10
 variants: 1
+buildVisibility: shown
