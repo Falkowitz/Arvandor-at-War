@@ -7,10 +7,10 @@ hitSize: 24
 rotateSpeed: 1
 treadRects: [
 	{
-	x: 16
-	y: 0
-	width: 6
-	length: 96
+	x: 24
+	y: -48
+	width: 9
+	height: 88
 	}
 ]
 mechSideSway: 0

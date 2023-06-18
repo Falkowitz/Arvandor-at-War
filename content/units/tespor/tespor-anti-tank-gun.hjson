@@ -2,12 +2,13 @@ health: 225
 type: tank
 name: Tespor Anti Tank Gun
 armor: 2
+treadFrames: 20
 treadRects: [
 	{
-	x: 0
-	y: 0
-	width: 0
-	length: 0
+	x: 20
+	y: -20
+	width: 4
+	height: 24
 	}
 	]
 speed: 0.35
