@@ -45,7 +45,7 @@ weapons:[
 	reload: 180
 	mirror: false
 	rotate: false
-	shootSound: 7.92×57mm-fire
+	shootSound: 12-gauge-fire
 	parts: [
 			{
 			suffix: "-lhand"
