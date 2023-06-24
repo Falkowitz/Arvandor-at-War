@@ -62,6 +62,13 @@ plans: [
     ]
   },
   {
+    unit: tespor-assault
+    time: 1800
+    requirements: [
+		supplies/250
+    ]
+  },
+  {
     unit: tespor-field-artillery
     time: 5400
     requirements: [
