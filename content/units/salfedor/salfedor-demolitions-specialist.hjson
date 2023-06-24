@@ -8,6 +8,7 @@ hitSize: 6
 outlines: false
 fogRadius: 5
 drawCell: false
+createScorch: false
 range: 16
 controller: HugAI
 deathExplosionEffect: {

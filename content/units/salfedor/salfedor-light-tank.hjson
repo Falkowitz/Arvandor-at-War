@@ -1,7 +1,7 @@
 health: 300
 name: Salfedor Light Armored Vehicle
 type: tank
-armor: 15
+armor: 30
 speed: 0.6
 hitSize: 24
 rotateSpeed: 1

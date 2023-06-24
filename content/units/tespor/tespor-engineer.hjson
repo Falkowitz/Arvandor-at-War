@@ -9,8 +9,13 @@ outlines: false
 fogRadius: 5
 drawCell: false
 range: 16
+createScorch: false
 defaultCommand: repair
 controller: RepairAI
+commands: [
+	move,
+	repair
+	]
 deathExplosionEffect: {
 	type: ParticleEffect
 	sizeFrom: 1

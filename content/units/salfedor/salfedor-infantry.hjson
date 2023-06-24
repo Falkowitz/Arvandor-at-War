@@ -9,6 +9,7 @@ outlines: false
 fogRadius: 15
 drawCell: false
 range: 120
+createScorch: false
 deathExplosionEffect: {
 	type: ParticleEffect
 	sizeFrom: 1

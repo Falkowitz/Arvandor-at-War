@@ -1,0 +1,61 @@
+health: 10
+name: Tespor Assault Grenade
+armor: 0
+speed: 0
+hitSize: 4
+outlines: false
+fogRadius: 0
+hidden: true
+drawCell: false
+range: 24
+targetAir: false
+targetGround: true
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+hittable: false
+drawMinimap: false
+targetable: false
+physics: false
+groundLayer: 29.1
+weapons:[
+	{
+	name: none
+	shootOnDeath: true
+	shootCone: 180
+	x: 0
+	y: 0
+	useAmmo: false
+	ejectEffect: none
+	reload: 60
+	mirror: false
+	rotate: false
+	shootSound: light-tank-explosion
+	alwaysShooting: true
+	bullet:{
+		type: BasicBulletType
+		damage: 0
+		instantDisappear: true
+		speed: 0
+		collides: true
+		collidesTiles: true
+		collidesGround: true
+		collidesAir: false
+		killShooter: true
+		splashDamage: 100
+		splashDamageRadius: 24
+		width: 1
+		height: 1
+		range: 24
+		despawnEffect: none
+		shootEffect: none
+		chargeEffect: none
+		smokeEffect: none
+		hittable: false
+		reflectable: true
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 180
+		}
+	}
+]
