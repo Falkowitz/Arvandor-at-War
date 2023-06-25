@@ -1,14 +1,14 @@
-health: 100
+health: 85
 type: mech
-name: Salfedor Conscript
+name: Salfedor Sharpshooter
 armor: 0
-speed: 0.45
+speed: 0.425
 mechSideSway: 0.1
 hitSize: 6
 outlines: false
-fogRadius: 15
+fogRadius: 30
 drawCell: false
-range: 120
+range: 240
 createScorch: false
 deathExplosionEffect: {
 	type: ParticleEffect
@@ -34,7 +34,7 @@ targetAir: false
 targetGround: true
 weapons:[
 	{
-	name: salfedor-infantry-weapon
+	name: salfedor-sharpshooter-weapon
 	x: 0
 	shootX: 2
 	y: 0
@@ -42,7 +42,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 10
 	ejectEffect: none
-	reload: 90
+	reload: 240
 	mirror: false
 	rotate: false
 	shootSound: .303-fire
@@ -90,9 +90,13 @@ weapons:[
 	bullet:{
 		type: BasicBulletType
 		optimalLifeFract: 60
-		damage: 12
+		damage: 50
+		pierce: true
+		pierceBuilding: false
+		pierceCap: 1
+		buildingDamageMultiplier: 0.1
 		speed: 6
-		lifetime: 20
+		lifetime: 40
 		width: 2
 		height: 4
 		}
@@ -100,42 +104,11 @@ weapons:[
 		shots: 1
 		firstShotDelay: 30
 		}
-	},
-	{
-	name: none
-	x: 0
-	useAmmo: false
-	y: 0
-	shootX: 2
-	shootY: 6
-	recoil: -1
-	ejectEffect: none
-	reload: 300
-	mirror: false
-	rotate: false
-	shootSound: swoosh-sound
-	bullet:{
-		type: BasicBulletType
-		damage: 35
-		recoil: -1
-		width: 1
-		height: 1
-		range: 8
-		hitEffect: none
-		despawnEffect: none
-		shootEffect: none
-		chargeEffect: none
-		smokeEffect: none
-		hittable: false
-		reflectable: true
-		speed: 0
-		lifetime: 1
-		}
 	}
 ]
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: salfedor-infantry-corpse
+	unit: salfedor-sharpshooter-corpse
 	}
 ]

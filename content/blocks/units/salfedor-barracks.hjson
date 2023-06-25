@@ -28,7 +28,14 @@ plans: [
   },
   {
     unit: salfedor-demolitions-specialist
-    time: 3600
+    time: 1800
+    requirements: [
+		supplies/250
+    ]
+  },
+  {
+    unit: salfedor-sharpshooter
+    time: 1800
     requirements: [
 		supplies/250
     ]

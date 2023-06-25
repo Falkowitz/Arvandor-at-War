@@ -91,6 +91,7 @@ weapons:[
 		type: BasicBulletType
 		optimalLifeFract: 120
 		damage: 2
+		buildingDamageMultiplier: 0.1
 		speed: 6
 		lifetime: 14
 		width: 2

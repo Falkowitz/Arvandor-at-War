@@ -11,12 +11,12 @@ maxAmmo: 50
 name: Artillery Emplacement
 outlineRadius: 0
 buildCostMultiplier: 4
-fogRadius: 50
+fogRadius: 30
 shake: 10
 ammoPerShot: 10
 ammoEjectBack: 1
 ammoUseEffect: casing2
-range: 400
+range: 240
 targetAir: false
 targetGround: true
 health: 250
@@ -47,7 +47,7 @@ drawer: {
 	height: 5
 	damage: 150
 	speed: 1
-	lifetime: 400
+	lifetime: 240
         splashDamageRadius: 16
         splashDamage: 150
 	shootEffect: shootSmall
