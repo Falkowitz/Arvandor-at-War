@@ -3,7 +3,7 @@ category: units
 placeSound: block-place
 breakSound: block-destroy
 destroySound: block-destroy
-researchCostMultiplier: 0.2
+researchCostMultiplier: 2
 size: 4
 configurable: true
 buildCostMultiplier: 1
@@ -27,36 +27,8 @@ plans: [
     ]
   },
   {
-    unit: tespor-light-tank
-    time: 3600
-    requirements: [
-		supplies/450
-    ]
-  },
-  {
-    unit: tespor-light-support-weapon
-    time: 1500
-    requirements: [
-		supplies/350
-    ]
-  },
-  {
-    unit: tespor-anti-tank-gun
-    time: 3600
-    requirements: [
-		supplies/750
-    ]
-  },
-  {
-    unit: tespor-officer
-    time: 5100
-    requirements: [
-		supplies/600
-    ]
-  },
-  {
     unit: tespor-engineer
-    time: 7200
+    time: 3600
     requirements: [
 		supplies/500
     ]
@@ -69,10 +41,17 @@ plans: [
     ]
   },
   {
-    unit: tespor-field-artillery
-    time: 5400
+    unit: tespor-anti-tank-gun
+    time: 3600
     requirements: [
-		supplies/250
+		supplies/500
+    ]
+  },
+  {
+    unit: tespor-light-tank
+    time: 3600
+    requirements: [
+		supplies/500
     ]
   }
 ]

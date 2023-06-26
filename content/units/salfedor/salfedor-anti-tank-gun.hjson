@@ -1,40 +1,76 @@
-health: 200
-name: Salfedor Tank Destroyer Battalion
-armor: 5
-speed: 0.15
-hitSize: 6
-rotateSpeed: 1
-mechSideSway: 0
+health: 250
+type: tank
+name: Salfedor Anti Tank Gun
+armor: 0
+treadFrames: 20
+treadRects: [
+	{
+	x: 18
+	y: -16
+	width: 6
+	height: 16
+	}
+	]
+speed: 0.3
+hitSize: 16
+rotateSpeed: 0.4
 outlines: false
-fogRadius: 8
-deathExplosionEffect: false
-deathSound: division-death
+fogRadius: 30
+drawCell: false
+omniMovement: false
+range: 240
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: salfedor-division-ambient
 ammoCapacity: 30
 ammoType: supplies
 targetAir: false
 targetGround: true
 weapons:[
 	{
-	name: none
+	name: salfedor-anti-tank-gun-weapon
 	x: 0
 	y: 0
+	shootY: 8
 	recoil: 0
-	inaccuracy: 3
+	inaccuracy: 7
 	ejectEffect: none
 	reload: 300
 	mirror: false
-	rotate: true
+	rotate: false
 	shootSound: 75mm-fire
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			}
+		]
 	bullet:{
 		type: BasicBulletType
-		damage: 175
-		speed: 3
-		lifetime: 25
+		damage: 200
+		splashDamage: 150
+		splashDamageRadius: 5
+		speed: 6
+		recoil: 1
+		lifetime: 40
 		width: 2
 		height: 4
 		status: low-morale
-		statusDuration: 180
+		statusDuration: 240
 		pierceArmor: true
 		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: salfedor-anti-tank-gun-wreck
 	}
 ]

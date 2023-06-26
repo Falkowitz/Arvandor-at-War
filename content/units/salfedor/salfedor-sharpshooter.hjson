@@ -40,7 +40,6 @@ weapons:[
 	y: 0
 	shootY: 6
 	recoil: 0.5
-	inaccuracy: 10
 	ejectEffect: none
 	reload: 240
 	mirror: false
