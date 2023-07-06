@@ -41,17 +41,10 @@ plans: [
     ]
   },
   {
-    unit: salfedor-anti-tank-gun
-    time: 3600
+    unit: salfedor-anti-tank-rifle
+    time: 1800
     requirements: [
-		supplies/500
-    ]
-  },
-  {
-    unit: salfedor-light-tank
-    time: 3600
-    requirements: [
-		supplies/500
+		supplies/250
     ]
   }
 ]

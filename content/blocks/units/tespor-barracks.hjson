@@ -39,19 +39,5 @@ plans: [
     requirements: [
 		supplies/250
     ]
-  },
-  {
-    unit: tespor-anti-tank-gun
-    time: 3600
-    requirements: [
-		supplies/500
-    ]
-  },
-  {
-    unit: tespor-light-tank
-    time: 3600
-    requirements: [
-		supplies/500
-    ]
   }
 ]

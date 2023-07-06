@@ -1,65 +1,70 @@
-health: 300
-name: Salfedor Light Armored Vehicle
+health: 600
+name: Salfedor Medium Armored Vehicle
 type: tank
-armor: 30
-speed: 0.6
-hitSize: 24
-rotateSpeed: 1
-treadFrames: 88
+armor: 60
+speed: 0.5
+hitSize: 32
+rotateSpeed: 0.8
+treadFrames: 120
 treadRects: [
 	{
-	x: 24
-	y: -48
-	width: 9
-	height: 88
+	x: 25
+	y: -64
+	width: 16
+	height: 120
 	}
 ]
 mechSideSway: 0
 outlines: false
-fogRadius: 10
+fogRadius: 15
 drawCell: false
 omniMovement: false
 rotateMoveFirst: true
 deathExplosionEffect: dynamicExplosion
 deathSound: light-tank-explosion
 loopSound: light-tank-ambient
-ammoCapacity: 500
+ammoCapacity: 50
 ammoType: supplies
 targetAir: false
 targetGround: true
-range: 80
+range: 160
 weapons:[
 	{
-	name: salfedor-light-tank-weapon
+	name: salfedor-medium-tank-weapon
 	x: 0
-	y: -3
+	y: 0
 	shootX: 0
-	shootY: 14
+	shootY: 20
 	recoil: 0
-	rotateSpeed: 1
-	inaccuracy: 10
+	rotateSpeed: 0.8
+	inaccuracy: 5
 	ejectEffect: none
-	reload: 5
+	reload: 240
 	mirror: false
 	rotate: true
-	shootSound: 12mm-fire
+	shootSound: 40mm-fire
+	layerOffset: 0.1
 	parts: [
 			{
 			suffix: "-barrel"
 			type: RegionPart
 			progress: recoil
 			x: 0
-			y: 0
-			moveY: -2
+			y: 5
+			layerOffset: 0.1
+			moveY: -1
 			mirror: false
 			outline: false
+			layerOffset: -0.05
 			}
 		]
 	bullet:{
 		type: BasicBulletType
-		damage: 15
+		splashDamage: 50
+		splashDamageRadius: 16
+		damage: 75
 		speed: 6
-		lifetime: 14
+		lifetime: 26.75
 		width: 2
 		height: 4
 		}
@@ -68,6 +73,6 @@ weapons:[
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: salfedor-light-tank-wreck
+	unit: salfedor-medium-tank-wreck
 	}
 ]

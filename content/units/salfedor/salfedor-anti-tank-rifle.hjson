@@ -1,14 +1,14 @@
-health: 85
+health: 150
 type: mech
-name: Salfedor Sharpshooter
+name: Salfedor Anti Armor Rifle
 armor: 0
-speed: 0.3
+speed: 0.40
 mechSideSway: 0.1
 hitSize: 6
 outlines: false
-fogRadius: 30
+fogRadius: 20
 drawCell: false
-range: 240
+range: 160
 createScorch: false
 deathExplosionEffect: {
 	type: ParticleEffect
@@ -28,23 +28,24 @@ deathExplosionEffect: {
 }
 deathSound: salfedor-division-death
 loopSound: salfedor-division-ambient
-ammoCapacity: 42
+ammoCapacity: 30
 ammoType: supplies
 targetAir: false
 targetGround: true
 weapons:[
 	{
-	name: salfedor-sharpshooter-weapon
+	name: salfedor-anti-tank-rifle-weapon
 	x: 0
 	shootX: 2
 	y: 0
 	shootY: 6
 	recoil: 0.5
+	inaccuracy: 3
 	ejectEffect: none
 	reload: 240
 	mirror: false
 	rotate: false
-	shootSound: .303-fire
+	shootSound: 14mm-fire
 	parts: [
 			{
 			suffix: "-lhand"
@@ -88,26 +89,21 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		optimalLifeFract: 60
 		damage: 50
-		pierce: true
-		pierceBuilding: false
-		pierceCap: 1
-		buildingDamageMultiplier: 0.1
-		speed: 6
-		lifetime: 40
+		speed: 3
+		lifetime: 53.5
 		width: 2
 		height: 4
 		}
 	shoot: {
 		shots: 1
-		firstShotDelay: 30
+		firstShotDelay: 60
 		}
-	}
+	},
 ]
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: salfedor-sharpshooter-corpse
+	unit: salfedor-anti-tank-rifle-corpse
 	}
 ]
