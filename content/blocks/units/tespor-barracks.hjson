@@ -39,5 +39,12 @@ plans: [
     requirements: [
 		supplies/250
     ]
+  },
+  {
+    unit: tespor-officer
+    time: 3600
+    requirements: [
+		supplies/500
+    ]
   }
 ]

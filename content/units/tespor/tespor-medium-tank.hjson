@@ -1,17 +1,17 @@
-health: 600
-name: Salfedor Medium Armored Vehicle
+health: 750
+name: Tespor Medium Armored Vehicle
 type: tank
-armor: 60
-speed: 0.5
+armor: 75
+speed: 0.4
 hitSize: 32
-rotateSpeed: 0.8
-treadFrames: 120
+rotateSpeed: 0.7
+treadFrames: 112
 treadRects: [
 	{
 	x: 25
-	y: -64
+	y: -57
 	width: 16
-	height: 120
+	height: 112
 	}
 ]
 mechSideSway: 0
@@ -30,19 +30,19 @@ targetGround: true
 range: 160
 weapons:[
 	{
-	name: salfedor-medium-tank-weapon
-	x: 0
-	y: 0
-	shootX: 0
-	shootY: 20
+	name: tespor-medium-tank-weapon
+	x: 2
+	y: 4
+	shootX: 2
+	shootY: 16
 	recoil: 0
-	rotateSpeed: 0.8
-	inaccuracy: 5
+	rotateSpeed: 0.7
+	inaccuracy: 4
 	ejectEffect: none
 	reload: 240
 	mirror: false
 	rotate: true
-	shootSound: 40mm-fire
+	shootSound: 60mm-fire
 	layerOffset: 0.1
 	parts: [
 			{
@@ -50,7 +50,7 @@ weapons:[
 			type: RegionPart
 			progress: recoil
 			x: 0
-			y: 5
+			y: 0
 			layerOffset: 0.1
 			moveY: -1
 			mirror: false
@@ -60,8 +60,8 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		splashDamage: 50
-		splashDamageRadius: 16
+		splashDamage: 25
+		splashDamageRadius: 32
 		damage: 75
 		speed: 6
 		lifetime: 26.75
@@ -73,6 +73,6 @@ weapons:[
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: salfedor-medium-tank-wreck
+	unit: tespor-medium-tank-wreck
 	}
 ]

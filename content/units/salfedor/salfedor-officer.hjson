@@ -1,26 +1,51 @@
-health: 125
-name: Salfedor Officer Corps
+health: 150
+type: mech
+name: Salfedor Officer 
 armor: 0
-speed: 0.3
+speed: 0.475
 hitSize: 6
-rotateSpeed: 1
-mechSideSway: 0
+mechSideSway: 0.1
 outlines: false
-fogRadius: 5
-deathExplosionEffect: false
-deathSound: division-death
-ammoCapacity: 150
+controller: DefenderAI
+fogRadius: 10
+range: 80
+drawCell: false
+createScorch: false
+deathExplosionEffect: {
+	type: ParticleEffect
+	sizeFrom: 1
+	sizeTo: 10
+	lifetime: 3600
+	colorFrom: 800000
+	colorTo: 800000
+	lightOpacity: 0
+	lightScl: 0
+	particles: 1
+	layer: 28
+	lenFrom: 1
+	lenTo: 1
+	strokeFrom: 0
+	strokeTo: 0
+}
+deathSound: salfedor-division-death
+loopSound: salfedor-division-ambient
+canAttack: false
+ammoCapacity: 50
 ammoType: supplies
 targetAir: false
 targetGround: false
 abilities: [
-  {
-    type: StatusFieldAbility
-    range: 24
-    duration: 300
-    reload: 480
-    effect: high-morale
-  }
+	{
+	type: StatusFieldAbility
+	range: 80
+	duration: 300
+	reload: 480
+	effect: high-morale
+	},
+	{
+	type: SpawnDeathAbility
+	unit: salfedor-officer-corpse
+	}
 ]
 immunities: [
     high-morale
