@@ -1,0 +1,119 @@
+health: 1050
+name: Tespor Heavy Armored Vehicle
+type: tank
+armor: 105
+speed: 0.2
+hitSize: 40
+rotateSpeed: 0.5
+treadFrames: 141
+treadRects: [
+	{
+	x: 32
+	y: -71
+	width: 19
+	height: 141
+	}
+]
+mechSideSway: 0
+outlines: false
+fogRadius: 25
+drawCell: false
+omniMovement: false
+rotateMoveFirst: true
+deathExplosionEffect: dynamicExplosion
+deathSound: heavy-tank-explosion
+loopSound: heavy-tank-ambient
+loopSoundVolume: 0.3
+ammoCapacity: 300
+ammoType: supplies
+targetAir: false
+targetGround: true
+range: 200
+weapons:[
+	{
+	name: tespor-heavy-tank-main-weapon
+	x: 4
+	y: 4
+	shootX: 0
+	shootY: 16
+	recoil: 0
+	rotateSpeed: 0.6
+	inaccuracy: 3
+	ejectEffect: none
+	reload: 360
+	mirror: false
+	rotate: true
+	shootSound: 80mm-fire
+	layerOffset: 0.1
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			outline: false
+			layerOffset: -0.03
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		splashDamage: 50
+		splashDamageRadius: 24
+		damage: 125
+		speed: 6
+		lifetime: 33.75
+		width: 2
+		height: 4
+		}
+	},
+	{
+	name: tespor-heavy-tank-alt-weapon
+	x: -4
+	y: 4
+	shootX: 0
+	shootY: 8
+	recoil: 0
+	rotateSpeed: 0.7
+	inaccuracy: 10
+	ejectEffect: none
+	reload: 4
+	mirror: false
+	rotate: true
+	shootSound: 7.92-fire
+	layerOffset: 0.05
+	baseRotation: 90
+	rotationLimit: 225
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: recoil
+			x: 0
+			y: 0
+			moveY: -1
+			mirror: false
+			outline: false
+			layerOffset: -0.05
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		splashDamage: 10
+		splashDamageRadius: 8
+		damage: 10
+		speed: 6
+		lifetime: 33.75
+		width: 2
+		height: 4
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-heavy-tank-wreck
+	}
+]

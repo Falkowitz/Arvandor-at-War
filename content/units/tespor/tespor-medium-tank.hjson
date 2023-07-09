@@ -21,8 +21,9 @@ drawCell: false
 omniMovement: false
 rotateMoveFirst: true
 deathExplosionEffect: dynamicExplosion
-deathSound: light-tank-explosion
-loopSound: light-tank-ambient
+deathSound: medium-tank-explosion
+loopSound: tespor-medium-tank-ambient
+loopSoundVolume: 0.1
 ammoCapacity: 50
 ammoType: supplies
 targetAir: false

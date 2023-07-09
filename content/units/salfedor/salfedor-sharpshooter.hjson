@@ -12,6 +12,8 @@ range: 240
 createScorch: false
 deathExplosionEffect: {
 	type: ParticleEffect
+	cone: 1
+	region: aaw-blood
 	sizeFrom: 1
 	sizeTo: 10
 	lifetime: 3600
@@ -21,10 +23,14 @@ deathExplosionEffect: {
 	lightScl: 0
 	particles: 1
 	layer: 28
+	randLength: false
+	length: 1
+	baseLength: 1
 	lenFrom: 1
 	lenTo: 1
 	strokeFrom: 0
 	strokeTo: 0
+	cap: false
 }
 deathSound: salfedor-division-death
 loopSound: salfedor-division-ambient
