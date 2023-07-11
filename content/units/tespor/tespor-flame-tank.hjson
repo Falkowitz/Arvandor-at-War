@@ -1,0 +1,86 @@
+health: 450
+name: Tespor Light Flame Armored Vehicle
+type: tank
+armor: 45
+speed: 0.425
+hitSize: 24
+rotateSpeed: 0.8
+treadFrames: 90
+treadRects: [
+	{
+	x: 26
+	y: -49
+	width: 8
+	height: 90
+	}
+]
+mechSideSway: 0
+outlines: false
+fogRadius: 10
+drawCell: false
+omniMovement: false
+rotateMoveFirst: true
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: light-tank-ambient
+ammoCapacity: 300
+ammoType: supplies
+targetAir: false
+targetGround: true
+range: 80
+weapons:[
+	{
+	name: tespor-flame-tank-weapon
+	x: 0
+	y: 3
+	shootX: 0
+	shootY: 9
+	recoil: 0
+	rotateSpeed: 0.9
+	inaccuracy: 10
+	ejectEffect: none
+	reload: 410
+	mirror: false
+	rotate: true
+	shootSound: flamethrower-fire
+	layerOffset: 0.1
+	bullet:{
+		type: BasicBulletType
+		drag: 0
+		hitSize: 8
+		damage: 0.1
+		pierce: true
+		pierceBuilding: true
+		hitEffect: hitFlameSmall
+		despawnEffect: none
+		shootEffect: shootSmallFlame
+		speed: 3
+		lifetime: 27
+		knockback: 0.1
+		width: 0
+		height: 0 
+		status: burning
+		statusDuration: 180
+		hittable: false
+		incendChance: 1
+		incendSpread: 8
+		incendAmount: 5
+		despawnHit: true
+		}
+	shoot: {
+		shots: 50
+		shotDelay: 1
+		}
+	}
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-flame-tank-wreck
+	},
+	{
+	type: SpawnDeathAbility
+	unit: tespor-flame-tank-death
+	}
+]
+immunities: [burning]

@@ -1,0 +1,113 @@
+health: 10
+name: Tespor Flame Tank Death
+armor: 0
+speed: 0
+hitSize: 0
+physics: false
+outlines: false
+fogRadius: 0
+hidden: true
+drawCell: false
+range: 40
+targetAir: false
+targetGround: true
+deathExplosionEffect: dynamicExplosion
+deathSound: medium-tank-explosion
+hittable: false
+drawMinimap: false
+targetable: false
+physics: false
+groundLayer: 29.1
+weapons:[
+	{
+	name: none
+	shootOnDeath: true
+	shootCone: 180
+	x: 0
+	y: 0
+	useAmmo: false
+	ejectEffect: none
+	reload: 60
+	mirror: false
+	rotate: false
+	shootSound: medium-tank-explosion
+	alwaysShooting: true
+	bullet:{
+		type: BasicBulletType
+		damage: 0
+		instantDisappear: true
+		speed: 0
+		collides: true
+		collidesTiles: true
+		collidesGround: true
+		collidesAir: false
+		killShooter: true
+		splashDamage: 150
+		splashDamageRadius: 40
+		width: 0
+		height: 0
+		range: 40
+		despawnEffect: none
+		shootEffect: none
+		chargeEffect: none
+		smokeEffect: none
+		hittable: false
+		reflectable: true
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 0
+		shotDelay: 0
+		}
+	},
+	{
+	name: none
+	shootOnDeath: true
+	shootCone: 180
+	x: 0
+	y: 0
+	useAmmo: false
+	ejectEffect: none
+	reload: 60
+	mirror: false
+	rotate: false
+	shootSound: flamethrower-fire
+	inaccuracy: 360
+	alwaysShooting: true
+	bullet:{
+		type: BasicBulletType
+		speed: 3
+		lifetime: 14
+		collides: true
+		collidesTiles: true
+		collidesGround: true
+		pierce: true
+		pierceBuilding: true
+		collidesAir: false
+		killShooter: true
+		damage: 1
+		hitSize: 8
+		width: 0
+		knockback: 0.1
+		height: 0
+		range: 40
+		despawnEffect: none
+		shootEffect: none
+		hitEffect: hitFlameSmall
+		shootEffect: shootSmallFlame
+		smokeEffect: none
+		status: burning
+		statusDuration: 180
+		hittable: false
+		incendChance: 1
+		incendSpread: 8
+		incendAmount: 5
+		despawnHit: true
+		}
+	shoot: {
+		shots: 50
+		firstShotDelay: 0
+		shotDelay: 0
+		}
+	}
+]

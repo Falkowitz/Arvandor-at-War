@@ -22,7 +22,7 @@ omniMovement: false
 rotateMoveFirst: true
 deathExplosionEffect: dynamicExplosion
 deathSound: light-tank-explosion
-loopSound: light-tank-ambient
+loopSound: salfedor-light-tank-ambient
 ammoCapacity: 500
 ammoType: supplies
 targetAir: false

@@ -1,0 +1,62 @@
+health: 999999
+type: missile
+hidden: true
+name: -
+armor: 0
+groundLayer: 29.1
+speed: 0
+rotateSpeed: 0
+hitSize: 32
+outlines: false
+fogRadius: 0
+drawCell: false
+loopSound: destroyed-ambient
+targetAir: false
+physics: false
+targetGround: false
+hittable: false
+drawMinimap: false
+targetable: false
+killable: true
+useUnitCap: false
+playerControllable: false
+logicControllable: false
+isEnemy: false
+lifetime: 3600
+deathExplosionEffect: none
+deathSound: none
+weapons: [
+		{
+		name: none
+		display: false
+		useAmmo: false
+		mirror: false
+		showStatSprite: false
+		controllable: false
+		aiControllable: false
+		alwaysShooting: true
+		reload: 60
+		recoil: 0
+		x: 0
+		y: 0
+		shootSound: none
+		noAmmoSound: none
+		shootStatus: destroyed
+		shootStatusDuration: 600
+		bullet: {
+			type: BasicBulletType
+			damage: 0
+			instantDisappear: true
+			width: 1
+			height: 1
+			hitEffect: none
+			shootEffect: none
+			smokeEffect: none
+			despawnEffect: none
+			hittable: false
+			reflectable: true
+			speed: 1
+			lifetime: 60
+			}
+		}
+	]
