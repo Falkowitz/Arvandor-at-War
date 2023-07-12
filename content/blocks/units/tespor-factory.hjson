@@ -1,0 +1,50 @@
+type: UnitFactory
+category: units
+placeSound: block-place
+breakSound: block-destroy
+destroySound: block-destroy
+researchCostMultiplier: 0.2
+size: 8
+configurable: true
+buildCostMultiplier: 4.8
+rotate: true
+quickRotate: true
+health: 500
+name: Tespor Factory
+fogRadius: 5
+hasItems: true
+solid: true
+itemCapacity: 5000
+requirements: [
+	supplies/750
+]
+plans: [
+		{
+		unit: tespor-anti-tank-gun
+		time: 3600
+		requirements: [
+				supplies/500
+				]
+		},
+		{
+		unit: tespor-flame-tank
+		time: 10800
+		requirements: [
+				supplies/1000
+				]
+		},
+		{
+		unit: tespor-medium-tank
+		time: 10800
+		requirements: [
+				supplies/1000
+				]
+		},
+		{
+		unit: tespor-heavy-tank
+		time: 18000
+		requirements: [
+				supplies/1500
+				]
+		},
+	]

@@ -4,13 +4,13 @@ placeSound: block-place
 breakSound: block-destroy
 destroySound: block-destroy
 researchCostMultiplier: 2
-size: 4
+size: 3
 configurable: true
 buildCostMultiplier: 1
 rotate: true
 quickRotate: true
 health: 300
-name: Salfedor Barracks
+name: Tespor Barracks
 fogRadius: 3
 hasItems: true
 solid: true
@@ -20,35 +20,28 @@ requirements: [
 ]
 plans: [
   {
-    unit: salfedor-infantry
-    time: 720
+    unit: tespor-infantry
+    time: 600
     requirements: [
 		supplies/100
     ]
   },
   {
-    unit: salfedor-demolitions-specialist
-    time: 720
+    unit: tespor-engineer
+    time: 3600
     requirements: [
-		supplies/100
+		supplies/500
     ]
   },
   {
-    unit: salfedor-sharpshooter
+    unit: tespor-assault
     time: 1800
     requirements: [
 		supplies/250
     ]
   },
   {
-    unit: salfedor-anti-tank-rifle
-    time: 2160
-    requirements: [
-		supplies/300
-    ]
-  },
-  {
-    unit: salfedor-officer
+    unit: tespor-officer
     time: 3600
     requirements: [
 		supplies/500
