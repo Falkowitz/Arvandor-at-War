@@ -8,6 +8,6 @@ variants: 1
 buildVisibility: shown
 category: distribution
 requirements: [
-	supplies/10
+	supplies/100
 ]
-buildCostMultiplier: 20
+buildCostMultiplier: 18

@@ -1,8 +1,10 @@
 type: Floor
 speedMultiplier: 1
-name: Plains
+name: Trench
 walkSound: grass
-variants: 6
+status: entrenched
+statusDuration: 10
+variants: 0
 buildVisibility: shown
 category: distribution
 requirements: [

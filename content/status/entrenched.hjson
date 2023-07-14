@@ -1,5 +1,5 @@
 name: Entrenched
 healthMultiplier: 1.75
-speedMultiplier: 0
+speedMultiplier: 0.25
 color: 6e7080
 outline: false

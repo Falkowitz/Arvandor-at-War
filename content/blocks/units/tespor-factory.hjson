@@ -4,7 +4,7 @@ placeSound: block-place
 breakSound: block-destroy
 destroySound: block-destroy
 researchCostMultiplier: 0.2
-size: 8
+size: 6
 configurable: true
 buildCostMultiplier: 4.8
 rotate: true
