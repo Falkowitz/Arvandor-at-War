@@ -15,6 +15,7 @@ fogRadius: 3
 hasItems: true
 solid: true
 itemCapacity: 1000
+customShadow: true
 requirements: [
 	supplies/750
 ]

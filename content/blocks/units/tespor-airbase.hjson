@@ -11,6 +11,7 @@ rotate: true
 quickRotate: true
 health: 300
 name: Tespor Airbase
+customShadow: true
 fogRadius: 3
 hasItems: true
 solid: true
