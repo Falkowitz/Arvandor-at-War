@@ -1,0 +1,141 @@
+health: 200
+type: mech
+name: Tespor Heavy Machine Rifle
+armor: 0
+speed: 0.35
+mechSideSway: 0.1
+hitSize: 12
+outlines: false
+fogRadius: 20
+drawCell: false
+range: 160
+createScorch: false
+deathExplosionEffect: dynamicExplosion
+deathSound: light-tank-explosion
+loopSound: tespor-division-ambient
+ammoCapacity: 100
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: tespor-heavy-machine-gun-weapon
+	x: 0
+	shootX: 0
+	y: 0
+	shootY: 8
+	recoil: 0.5
+	inaccuracy: 3
+	ejectEffect: none
+	reload: 10
+	mirror: false
+	rotate: false
+	shootSound: 7.92-fire
+	shootStatus: slow
+	shootStatusDuration: 60
+	shootCone: 1.5
+	parts: [
+			{
+			suffix: "-llhand"
+			type: RegionPart
+			progress: warmup
+			x: -6
+			y: 0
+			moveRot: -90
+			moveY: 2
+			moveX: 1.5
+			layerOffset: -0.02
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			},
+			{
+			suffix: "-lrhand"
+			type: RegionPart
+			progress: warmup
+			x: -2
+			y: 0
+			moveRot: -90
+			moveY: -1.5
+			moveX: -2
+			layerOffset: -0.01
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			},
+			{
+			suffix: "-rlhand"
+			type: RegionPart
+			progress: warmup
+			x: 2
+			y: 0
+			moveRot: 90
+			moveY: -1.5
+			moveX: 2
+			layerOffset: -0.015
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			},
+			{
+			suffix: "-rrhand"
+			type: RegionPart
+			progress: warmup
+			x: 6
+			y: 0
+			moveRot: 90
+			moveY: 2
+			moveX: -1.5
+			layerOffset: -0.02
+			mirror: false
+			outline: false
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -0.1
+					}
+				]
+			}
+		]
+	bullet:{
+		type: BasicBulletType
+		recoil: 0.1
+		damage: 20
+		speed: 3
+		lifetime: 53.5
+		width: 2
+		height: 4
+		status: low-morale
+		statusDuration: 180
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 30
+		}
+	},
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-heavy-machine-gun-corpse
+	}
+]

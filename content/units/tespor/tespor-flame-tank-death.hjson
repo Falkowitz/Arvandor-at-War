@@ -8,6 +8,7 @@ outlines: false
 fogRadius: 0
 hidden: true
 drawCell: false
+internal: true
 range: 40
 targetAir: false
 targetGround: true
