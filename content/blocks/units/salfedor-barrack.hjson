@@ -48,6 +48,13 @@ plans: [
     ]
   },
   {
+    unit: salfedor-light-machine-gun
+    time: 2160
+    requirements: [
+		supplies/300
+    ]
+  },
+  {
     unit: salfedor-officer
     time: 3600
     requirements: [

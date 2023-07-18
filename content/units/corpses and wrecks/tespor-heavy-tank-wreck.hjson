@@ -14,6 +14,7 @@ loopSound: destroyed-ambient
 targetAir: false
 physics: false
 targetGround: false
+internal: true
 hittable: false
 drawMinimap: false
 targetable: false

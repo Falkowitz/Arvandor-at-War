@@ -15,6 +15,7 @@ targetAir: false
 targetGround: false
 hittable: false
 physics: false 
+internal: true
 targetable: false
 killable: true
 drawMinimap: false

@@ -2,6 +2,7 @@ health: 999999
 type: missile
 hidden: true
 name: -
+internal: true
 armor: 0
 groundLayer: 29
 speed: 0

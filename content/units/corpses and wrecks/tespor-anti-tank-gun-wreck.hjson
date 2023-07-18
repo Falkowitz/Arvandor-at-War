@@ -12,6 +12,7 @@ fogRadius: 0
 drawCell: false
 loopSound: destroyed-ambient
 targetAir: false
+internal: true
 physics: false
 targetGround: false
 hittable: false

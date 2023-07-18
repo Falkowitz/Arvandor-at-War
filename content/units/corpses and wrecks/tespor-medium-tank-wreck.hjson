@@ -9,6 +9,7 @@ rotateSpeed: 0
 hitSize: 32
 outlines: false
 fogRadius: 0
+internal: true
 drawCell: false
 loopSound: destroyed-ambient
 targetAir: false

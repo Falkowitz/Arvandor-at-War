@@ -1,5 +1,6 @@
 health: 999999
 type: missile
+internal: true
 hidden: true
 name: -
 armor: 0

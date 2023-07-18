@@ -41,6 +41,13 @@ plans: [
     ]
   },
   {
+    unit: tespor-heavy-machine-gun
+    time: 2160
+    requirements: [
+		supplies/300
+    ]
+  },
+  {
     unit: tespor-officer
     time: 3600
     requirements: [

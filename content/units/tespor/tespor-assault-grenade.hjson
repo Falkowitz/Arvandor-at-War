@@ -6,6 +6,7 @@ hitSize: 4
 outlines: false
 fogRadius: 0
 hidden: true
+internal: true
 drawCell: false
 range: 24
 targetAir: false

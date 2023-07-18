@@ -11,6 +11,7 @@ hitSize: 0
 outlines: false
 fogRadius: 0
 drawCell: false
+internal: true
 targetAir: false
 targetGround: false
 hittable: false

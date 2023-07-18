@@ -17,6 +17,7 @@ targetGround: false
 hittable: false
 drawMinimap: false
 targetable: false
+internal: true
 killable: true
 useUnitCap: false
 playerControllable: false

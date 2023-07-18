@@ -4,6 +4,7 @@ hidden: true
 name: -
 armor: 0
 groundLayer: 29.1
+internal: true
 speed: 0
 rotateSpeed: 0
 hitSize: 24

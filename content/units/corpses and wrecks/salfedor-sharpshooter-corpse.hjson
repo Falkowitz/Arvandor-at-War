@@ -9,6 +9,7 @@ rotateSpeed: 0
 hitSize: 0
 outlines: false
 createScorch: false
+internal: true
 fogRadius: 0
 drawCell: false
 targetAir: false

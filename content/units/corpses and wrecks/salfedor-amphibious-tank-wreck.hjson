@@ -1,4 +1,5 @@
 health: 999999
+internal: true
 type: missile
 hidden: true
 name: -

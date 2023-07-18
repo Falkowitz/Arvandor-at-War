@@ -20,6 +20,7 @@ targetable: false
 killable: true
 useUnitCap: false
 playerControllable: false
+internal: true
 logicControllable: false
 isEnemy: false
 lifetime: 3600

@@ -5,6 +5,7 @@ name: -
 armor: 0
 groundLayer: 29
 speed: 0
+internal: true
 rotateSpeed: 0
 hitSize: 0
 outlines: false
