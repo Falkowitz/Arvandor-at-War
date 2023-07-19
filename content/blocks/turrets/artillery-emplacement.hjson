@@ -38,27 +38,25 @@ drawer: {
 	}
 	ammoTypes: {
 	supplies: {
-        type: ArtilleryBulletType 
+        	type: ArtilleryBulletType 
 	status: low-morale
 	statusDuration: 600
-        pierce: false
-        pierceBuilding: false
+       	pierce: false
+        	pierceBuilding: false
 	width: 3
 	height: 5
-	damage: 150
 	speed: 1
 	lifetime: 240
-        splashDamageRadius: 16
-        splashDamage: 150
+        	splashDamageRadius: 16
+        	splashDamage: 200
 	shootEffect: shootSmall
 	smokeEffect: shootSmallSmoke
-        trailEffect: smokeCloud
-        trailLength: 24
-        hitEffect: explosion
-        despawnEffect: explosion
-        weaveMag: 0.5
-        weaveRandom: true
-        weaveScale: 1
+        	trailEffect: smokeCloud
+        	trailLength: 24
+        	hitEffect: explosion
+        	despawnEffect: explosion
+	scaleLife: true
+	despawnHit: true
 	}
 	}
 requirements: [

@@ -1,38 +1,38 @@
-health: 200
+health: 150
 type: mech
-name: Tespor Heavy Machine Rifle
+name: Salfedor Mortar
 armor: 0
 speed: 0.35
 mechSideSway: 0.1
 hitSize: 12
 outlines: false
-fogRadius: 20
+fogRadius: 30
 drawCell: false
-range: 160
+range: 240
 createScorch: false
 deathExplosionEffect: dynamicExplosion
 deathSound: light-tank-explosion
-loopSound: tespor-division-ambient
-ammoCapacity: 100
+loopSound: salfedor-division-ambient
+ammoCapacity: 30
 ammoType: supplies
 targetAir: false
 targetGround: true
 weapons:[
 	{
-	name: tespor-heavy-machine-gun-weapon
+	name: salfedor-mortar-weapon
 	x: 0
 	shootX: 0
 	y: 0
-	shootY: 8
+	shootY: 6
 	recoil: 0.5
 	inaccuracy: 3
 	ejectEffect: none
-	reload: 10
+	reload: 480
 	mirror: false
 	rotate: false
-	shootSound: 7.92-fire
-	shootStatus: slow
-	shootStatusDuration: 60
+	shootSound: mortar-fire
+	shootStatus: unmoving
+	shootStatusDuration: 180
 	shootCone: 1.5
 	parts: [
 			{
@@ -41,19 +41,12 @@ weapons:[
 			progress: warmup
 			x: -6
 			y: 0
-			moveRot: -90
-			moveY: 2
-			moveX: 1.5
-			layerOffset: -0.02
+			moveRot: -45
+			moveY: 0
+			moveX: 0
+			layerOffset: -0.001
 			mirror: false
 			outline: false
-			moves: [
-					{
-					type: PartMove
-					progress: recoil
-					moveY: -0.1
-					}
-				]
 			},
 			{
 			suffix: "-lrhand"
@@ -61,19 +54,12 @@ weapons:[
 			progress: warmup
 			x: -2
 			y: 0
-			moveRot: -90
-			moveY: -1.5
-			moveX: -2
-			layerOffset: -0.01
+			moveRot: -45
+			moveY: 0
+			moveX: 0
+			layerOffset: -0.0015
 			mirror: false
 			outline: false
-			moves: [
-					{
-					type: PartMove
-					progress: recoil
-					moveY: -0.1
-					}
-				]
 			},
 			{
 			suffix: "-rlhand"
@@ -83,8 +69,8 @@ weapons:[
 			y: 0
 			moveRot: 90
 			moveY: -1.5
-			moveX: 2
-			layerOffset: -0.015
+			moveX: 3
+			layerOffset: -0.002
 			mirror: false
 			outline: false
 			moves: [
@@ -104,7 +90,7 @@ weapons:[
 			moveRot: 90
 			moveY: 2
 			moveX: -1.5
-			layerOffset: -0.02
+			layerOffset: -0.0015
 			mirror: false
 			outline: false
 			moves: [
@@ -117,15 +103,24 @@ weapons:[
 			}
 		]
 	bullet:{
-		type: BasicBulletType
-		recoil: 0.1
-		damage: 10
-		speed: 3
-		lifetime: 53.5
+		type: ArtilleryBulletType
+		despawnHit: true
+        		splashDamageRadius: 8
+        		splashDamage: 50
+		damage: 50
+		speed: 1
+		lifetime: 240
 		width: 2
 		height: 4
 		status: low-morale
 		statusDuration: 180
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+       		trailEffect: smokeCloud
+       	 	trailLength: 24
+       	 	hitEffect: explosion
+        		despawnEffect: explosion
+		scaleLife: true
 		}
 	shoot: {
 		shots: 1
@@ -136,6 +131,6 @@ weapons:[
 abilities: [
 	{
 	type: SpawnDeathAbility
-	unit: tespor-heavy-machine-gun-corpse
+	unit: salfedor-mortar-corpse
 	}
 ]

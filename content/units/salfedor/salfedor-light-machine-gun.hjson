@@ -95,7 +95,7 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		damage: 15
+		damage: 7
 		speed: 3
 		lifetime: 53.5
 		width: 2

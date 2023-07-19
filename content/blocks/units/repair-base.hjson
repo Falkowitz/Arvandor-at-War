@@ -9,12 +9,12 @@ buildCostMultiplier: 0.2
 rotate: true
 health: 300
 name: Repair Base
-fogRadius: 5
+fogRadius: 10
 hasItems: true
 solid: true
 itemCapacity: 150
-healAmount: 0.2
-range: 40
+healAmount: 0.01
+range: 80
 requirements: [
 	supplies/375
 ]

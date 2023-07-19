@@ -34,7 +34,7 @@ weapons:[
 	alwaysShooting: true
 	bullet:{
 		type: BasicBulletType
-		damage: 0
+		damage: 100
 		instantDisappear: true
 		speed: 0
 		collides: true

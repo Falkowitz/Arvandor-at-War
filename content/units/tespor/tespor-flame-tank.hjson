@@ -48,7 +48,7 @@ weapons:[
 		type: BasicBulletType
 		drag: 0
 		hitSize: 8
-		damage: 0.1
+		damage: 0.01
 		pierce: true
 		pierceBuilding: true
 		hitEffect: hitFlameSmall

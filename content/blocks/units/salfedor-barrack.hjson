@@ -60,5 +60,12 @@ plans: [
     requirements: [
 		supplies/500
     ]
+  },
+  {
+    unit: salfedor-mortar
+    time: 3600
+    requirements: [
+		supplies/500
+    ]
   }
 ]
