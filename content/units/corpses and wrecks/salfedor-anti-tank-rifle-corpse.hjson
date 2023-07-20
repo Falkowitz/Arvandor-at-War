@@ -10,6 +10,7 @@ rotateSpeed: 0
 hitSize: 0
 outlines: false
 createScorch: false
+defaultController: MissileAI
 fogRadius: 0
 drawCell: false
 targetAir: false

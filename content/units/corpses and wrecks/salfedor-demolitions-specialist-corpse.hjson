@@ -11,6 +11,7 @@ hitSize: 0
 outlines: false
 fogRadius: 0
 drawCell: false
+defaultController: MissileAI
 createScorch: false
 targetAir: false
 physics: false

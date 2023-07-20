@@ -15,6 +15,7 @@ loopSound: destroyed-ambient
 targetAir: false
 physics: false
 targetGround: false
+defaultController: MissileAI
 hittable: false
 drawMinimap: false
 targetable: false

@@ -6,6 +6,7 @@ armor: 0
 groundLayer: 29
 speed: 0
 rotateSpeed: 0
+defaultController: MissileAI
 hitSize: 0
 outlines: false
 fogRadius: 0

@@ -9,11 +9,11 @@ configurable: true
 buildCostMultiplier: 4.8
 rotate: true
 quickRotate: true
+solid: false
 health: 500
 name: Salfedor Factory
 fogRadius: 5
 hasItems: true
-solid: true
 itemCapacity: 5000
 requirements: [
 	supplies/750

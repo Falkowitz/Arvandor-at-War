@@ -11,6 +11,7 @@ hitSize: 24
 outlines: false
 fogRadius: 0
 drawCell: false
+defaultController: MissileAI
 loopSound: destroyed-ambient
 targetAir: false
 physics: false

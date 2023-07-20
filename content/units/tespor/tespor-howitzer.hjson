@@ -1,0 +1,129 @@
+health: 500
+type: tank
+name: Tespor Howitzer
+armor: 0
+speed: 0.3
+mechSideSway: 0.1
+hitSize: 24
+outlines: false
+fogRadius: 30
+drawCell: false
+treadFrames: 24
+rotateSpeed: 0.5
+treadRects: [
+	{
+	x: 21
+	y: -49
+	width: 8
+	height: 24
+	}
+]
+range: 240
+createScorch: false
+omniMovement: false
+rotateMoveFirst: true
+deathExplosionEffect: dynamicExplosion
+deathSound: medium-tank-explosion
+loopSound: tespor-division-ambient
+ammoCapacity: 50
+ammoType: supplies
+targetAir: false
+targetGround: true
+weapons:[
+	{
+	name: tespor-howitzer-weapon
+	x: 0
+	shootX: 0
+	y: 0
+	shootY: 30
+	recoil: 0
+	inaccuracy: 1.5
+	ejectEffect: none
+	reload: 600
+	mirror: false
+	rotate: false
+	shootSound: 75mm-Artyfire
+	shootStatus: unmoving
+	shootStatusDuration: 300
+	shootCone: 5
+	parts: [
+			{
+			suffix: "-barrel"
+			type: RegionPart
+			progress: warmup
+			x: 0
+			y: 0
+			moveRot: 0
+			moveY: 0
+			moveX: 0
+			layerOffset: 0.001
+			mirror: false
+			outline: false
+			growY: 0.2
+			moves: [
+					{
+					type: PartMove
+					progress: recoil
+					moveY: -1
+					}
+				]
+			},
+			{
+			suffix: "-stabilizer"
+			type: RegionPart
+			progress: warmup
+			x: 0
+			y: 0
+			moveRot: 0
+			moveY: 0
+			moveX: 4
+			layerOffset: -0.0015
+			mirror: true
+			outline: false
+			},
+			{
+			suffix: "-carriage"
+			type: RegionPart
+			progress: warmup
+			x: 0
+			y: 0
+			moveRot: -15
+			moveY: 0
+			moveX: 0
+			layerOffset: -0.002
+			mirror: true
+			outline: false
+			}
+		]
+	bullet:{
+		type: ArtilleryBulletType
+		despawnHit: true
+        		splashDamageRadius: 24
+        		splashDamage: 200
+		damage: 200
+		speed: 1
+		lifetime: 240
+		width: 3
+		height: 5
+		status: low-morale
+		statusDuration: 420
+		shootEffect: shootSmall
+		smokeEffect: shootSmallSmoke
+       		trailEffect: smokeCloud
+       	 	trailLength: 24
+       	 	hitEffect: explosion
+        		despawnEffect: explosion
+		scaleLife: true
+		}
+	shoot: {
+		shots: 1
+		firstShotDelay: 60
+		}
+	},
+]
+abilities: [
+	{
+	type: SpawnDeathAbility
+	unit: tespor-howitzer-wreck
+	}
+]

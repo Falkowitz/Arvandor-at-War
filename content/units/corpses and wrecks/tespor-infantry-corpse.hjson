@@ -23,6 +23,7 @@ useUnitCap: false
 playerControllable: false
 logicControllable: false
 isEnemy: false
+defaultController: MissileAI
 lifetime: 3600
 deathExplosionEffect: none
 deathSound: none

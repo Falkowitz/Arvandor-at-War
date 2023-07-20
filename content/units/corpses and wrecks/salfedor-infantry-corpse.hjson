@@ -26,3 +26,4 @@ isEnemy: false
 lifetime: 3600
 deathExplosionEffect: none
 deathSound: none
+defaultController: MissileAI

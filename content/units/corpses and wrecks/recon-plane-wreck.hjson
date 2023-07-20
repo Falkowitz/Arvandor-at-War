@@ -19,6 +19,7 @@ hittable: false
 drawMinimap: false
 targetable: false
 killable: true
+defaultController: MissileAI
 useUnitCap: false
 playerControllable: false
 logicControllable: false

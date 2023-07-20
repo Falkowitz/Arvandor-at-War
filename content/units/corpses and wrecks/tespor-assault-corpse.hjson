@@ -13,6 +13,7 @@ fogRadius: 0
 drawCell: false
 targetAir: false
 targetGround: false
+defaultController: MissileAI
 hittable: false
 physics: false 
 internal: true

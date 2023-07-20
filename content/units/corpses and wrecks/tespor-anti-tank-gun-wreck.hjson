@@ -13,6 +13,7 @@ drawCell: false
 loopSound: destroyed-ambient
 targetAir: false
 internal: true
+defaultController: MissileAI
 physics: false
 targetGround: false
 hittable: false

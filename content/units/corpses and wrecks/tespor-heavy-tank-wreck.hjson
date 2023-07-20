@@ -15,6 +15,7 @@ targetAir: false
 physics: false
 targetGround: false
 internal: true
+defaultController: MissileAI
 hittable: false
 drawMinimap: false
 targetable: false
