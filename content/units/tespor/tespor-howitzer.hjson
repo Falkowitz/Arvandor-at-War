@@ -35,7 +35,7 @@ weapons:[
 	x: 0
 	shootX: 0
 	y: 0
-	shootY: 30
+	shootY: 20
 	recoil: 0
 	inaccuracy: 1.5
 	ejectEffect: none
@@ -59,7 +59,7 @@ weapons:[
 			layerOffset: 0.001
 			mirror: false
 			outline: false
-			growY: 0.2
+			growY: -0.2
 			moves: [
 					{
 					type: PartMove

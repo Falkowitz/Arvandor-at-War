@@ -27,9 +27,9 @@ plans: [
 				]
 		},		{
 		unit: tespor-howitzer
-		time: 3600
+		time: 5400
 		requirements: [
-				supplies/500
+				supplies/750
 				]
 		},
 		{

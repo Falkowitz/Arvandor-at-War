@@ -1,8 +1,8 @@
 name: Sandbags
 type: Wall
-health: 75
+health: 100
 requirements:[
-	supplies/10
+	supplies/15
 ]
 category: defense
 fogRadius: 1
