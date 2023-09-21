@@ -30,7 +30,6 @@ targetGround: true
 range: 120
 immunities: [watered]
 drownTimeMultiplier: 999999
-naval: true
 weapons:[
 	{
 	name: salfedor-amphibious-tank-weapon
