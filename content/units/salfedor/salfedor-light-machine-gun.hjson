@@ -48,7 +48,7 @@ weapons:[
 	recoil: 0.5
 	inaccuracy: 5
 	ejectEffect: none
-	reload: 5
+	reload: 10
 	mirror: false
 	rotate: false
 	shootSound: 7.62-fire
@@ -95,7 +95,7 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		damage: 7
+		damage: 6
 		speed: 3
 		lifetime: 53.5
 		width: 2

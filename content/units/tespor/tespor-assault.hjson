@@ -95,8 +95,7 @@ weapons:[
 		]
 	bullet:{
 		type: BasicBulletType
-		optimalLifeFract: 120
-		damage: 2
+		damage: 1
 		buildingDamageMultiplier: 0.1
 		speed: 6
 		lifetime: 14
@@ -160,7 +159,7 @@ weapons:[
 		lightRadius: 0
 		lightOpacity: 0
 		scaleLife: true
-		spin: 1
+		spin: 2
 		damage: 0
 		collides: false
 		collidesTiles: false

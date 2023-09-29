@@ -2,7 +2,7 @@ health: 75
 type: mech
 name: Salfedor Demolitions Specialist
 armor: 0
-speed: 0.4
+speed: 0.5
 mechSideSway: 0.1
 hitSize: 6
 outlines: false
@@ -82,7 +82,9 @@ weapons:[
 	bullet:{
 		type: BasicBulletType
 		buildingDamageMultiplier: 1.5
-		damage: 50
+		damage: 75
+		splashDamage: 75
+		splashDamageRadius: 16
 		hitSize: 8
 		recoil: -1
 		width: 1

@@ -8,7 +8,7 @@ requirements:[
 category: defense
 fogRadius: 30
 buildVisibility: shown
-buildCostMultiplier: 1
+buildCostMultiplier: 6
 rotate: true
 placeSound: block-place
 breakSound: block-destroy

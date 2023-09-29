@@ -4,7 +4,7 @@ placeSound: block-place
 breakSound: block-destroy
 destroySound: block-destroy
 researchCostMultiplier: 0.2
-size: 6
+size: 7
 configurable: true
 buildCostMultiplier: 4.8
 rotate: true
@@ -50,7 +50,7 @@ plans: [
 		unit: tespor-heavy-tank
 		time: 18000
 		requirements: [
-				supplies/1500
+				supplies/2000
 				]
 		},
 	]

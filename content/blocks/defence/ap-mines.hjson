@@ -29,7 +29,7 @@ bullet:{
 	lifetime: 1
 	damage: 50
 	splashDamage: 50
-	splashDamageRadius: 24
+	splashDamageRadius: 40
 	splashDamagePierce: true
 	collides: true
 	collidesAir: false
