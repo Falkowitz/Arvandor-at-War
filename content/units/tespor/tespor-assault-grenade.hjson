@@ -8,7 +8,7 @@ fogRadius: 0
 hidden: true
 internal: true
 drawCell: false
-range: 24
+range: 999999
 targetAir: false
 targetGround: true
 deathExplosionEffect: dynamicExplosion
